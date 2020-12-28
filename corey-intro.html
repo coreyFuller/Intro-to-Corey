@@ -4,48 +4,62 @@
         <title>Corey Fuller</title>
         <meta charset="UTF-8"/>
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
         <body id="top">
-         <header>
-            <a href="#top"  class="top">Corey Fuller</a>
+         <header class="fixed w-full bg-red-800 text-white md:flex md:justify-between">
+            <a class="font-bold block px-8 py-4"href="#top">Corey Fuller</a>
              <nav>
-                <ul>
+                <ul class="flex">
                     <li>
-                        <a href="#hero">Hero</a>       
+                        <a class="block px-8 py-4 hover:bg-red-700" href="#hero">Hero</a>       
                     </li>
                      <li>
-                        <a href="#about">About</a>
+                        <a class="block px-8 py-4 hover:bg-red-700" href="#about">About</a>
                     </li>
                     <li>
-                    <a href="#tech-support">Tech support</a>
-                        </li>
+                    <a class="block px-8 py-4 hover:bg-red-700" href="#tech-support">Tech support</a>
+                    </li>
                 </ul>
              </nav>
          </header>
          <main>
-             <section id="hero">
-                 <p> Corey</p>
-                 <h1>In the house</h1>
-                 <p>Computer Information Systems</p>
+             <section id="hero" class="h-screen bg-red-600 text-white text-center grid place-items-center">
+               <div>
+                <p class="text-lg font-bold italic uppercase tracking-wider">Corey</p>
+                <h1 class="font-bold text-8xl leading-none">In the house</h1>
+                <p class="font-mono text-lg">Computer Information Systems</p>
+                <a
+                   href="https://www.linkedin.com/in/corey-fuller-/"
+                   rel="noopener noreferrer"
+                   target="_blank"
+                   class="mt-10 bg-white rounded-lg px-8 py4 text-black inline-block"
+                   >Connect!</a>
+               </div>
              </section>
-             <section id="about">
-                 <h2>About</h2>
-                 <ul>
-                     <li>
-                         <img src="Image-1.jpg"/>
-                         <h3>Design</h3>
-                         <p>I love design</p>
+             <section id="about" class="bg-gray-100 pt-10">
+                 <h2 class="text-center text-xl font-bold text-gray-900">About</h2>
+                 <ul class="grid p-10 gap-10 md:grid-cols-3">
+                     <li class="bg-white shadow rounded-lg overflow-hidden">
+                         <img src="Image-1.jpg" class="w-full"/>
+                         <div class="p-4">
+                            <h3 class="font-bold">Design</h3>
+                            <p>I love design</p>
+                        </div>
                      </li>
-                     <li>
-                         <img src="IMG_0590.jpg"/>
-                         <h3>Programming</h3>
-                         <p>I love programming</p>
+                     <li class="bg-white shadow rounded-lg overflow-hidden">
+                         <img src="IMG_0590.jpg" class="w-full"/>
+                         <div class="p-4">
+                            <h3>Programming</h3>
+                            <p>I love programming</p>
+                         </div>
                      </li>
-                     <li>
-                        <img src="IMG_0648.jpg"/>
-                        <h3>Taco Tuesday</h3>
-                        <p>Like them tacos</p>
+                     <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="IMG_0648.jpg" class="w-full"/>
+                        <div class="p-4">
+                            <h3>Taco Tuesday</h3>
+                            <p>Like them tacos</p>
+                        </div>
                     </li>
                  </ul>
              </section>
